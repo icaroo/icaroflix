@@ -1,0 +1,9 @@
+{
+    "categorias":[
+        {"id": 1,
+        "nome": "Front End",
+        "descricao": "Um categoria legal",
+        "cor": "#cbd1ff"
+        }
+    ]
+}
