@@ -16,15 +16,19 @@
     "styled-components": "^5.1.1"
   },
   "scripts": {
-   
-    "start": "node ./server.js",
-    "dev": "concurrently \"react-scripts start\" \"node ./server.js\"",
-    "server": "node ./server.js",
-    "server:static": "json-server --watch ./src/data/db.json --port 8080",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "lint": "eslint"
+      // With Heroku
+      "start": "node ./server.js",
+      "dev": "concurrently \"react-scripts start\" \"node ./server.js\"",
+      "server": "node ./server.js",
+      "server:static": "json-server --watch ./src/data/db.json --port 8080",
+      //Local without Heroku 
+      // "server": "json-server --watch db.json --port 8080",
+      // "dev": "concurrently \"react-scripts start\" \"npm run server\"",
+      // "start": "react-scripts start",
+      "build": "react-scripts build",
+      "test": "react-scripts test",
+      "eject": "react-scripts eject",
+      "lint": "eslint"
   },
   "eslintConfig": {
     "extends": "react-app"
